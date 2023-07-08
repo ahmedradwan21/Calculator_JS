@@ -1,0 +1,257 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	font-size: 16px;
+	font-family: sans-serif;
+	height: 100%;
+}
+
+body {
+	background: #222127;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+}
+input {
+	border: none;
+	outline: none;
+}
+input:focus {
+	outline: none;
+}
+button {
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+}
+button:focus {
+	outline: none;
+}
+.calculator-ah {
+	background: #000000;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.95rem;
+	width: 838px;
+	border: 1px solid #333;
+	padding: 0.99rem;
+	/* border-radius: fixed; */
+	position: fixed;
+	border-radius: 0.75rem;
+	height: 80%;
+	top: 50%;	
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 30px 20px;
+}
+/* .oop, */
+
+.output {
+	grid-column: 1/-1;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
+	height: 118px;
+	position: relative;
+	top: 20px;
+	background: #181b22;
+	border-radius: 14px;
+}
+
+.output .previous-operand {
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 1.5rem;
+	position: absolute;
+	left: 20px;
+	bottom: 70px;
+}
+.output .current-operand {
+	color: white;
+	font-size: 1.5rem;
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+}
+.hj
+{
+display: block;
+color: #5c0303;
+}
+/* .output .ofo-operand {
+	color: white;
+	font-size: 1.5rem;
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+} */
+
+.screen {
+	grid-column: 1/5;
+	border-radius: 0.75rem;
+	font-size: 2rem;
+	height: 6rem;
+	color: #fff;
+	background: #333849;
+	/* text-align: end; */
+	padding: 0.9rem;
+	position: relative;
+	top: 10px;
+}
+::placeholder {
+	color: rgb(117, 114, 114);
+	font-size: 20px;
+	position: absolute;
+	left: 20px;
+	bottom: 50px;
+}
+
+.oop2
+{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	/* aspect-ratio: 1; */
+	font-size: 1.25rem;
+	color: #ffcc00;
+	border-radius: 16px;
+	justify-content: center;
+	transition: 0.15s ease;
+	background: rgb(2 6 69 / 84%);
+	grid-column: 1/5;
+	width: 360px;
+	position: relative;
+	height: 59px;
+	top: 28px;
+	left: 213px;
+	/* top: 10px; */
+	font-weight: 900;
+}
+
+.oop1 {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	/* aspect-ratio: 1; */
+	font-size: 1.25rem;
+	color: #000000;
+	border-radius: 16px;
+	justify-content: center;
+	transition: 0.15s ease;
+	background: rgb(113, 41, 7);
+	grid-column: 1/5;
+	width: 360px;
+	position: relative;
+	height: 59px;
+	bottom: 13px;
+	left: 440px;
+	/* top: 10px; */
+	font-weight: 900;
+}
+.oop {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	/* aspect-ratio: 1; */
+	font-size: 1.25rem;
+	color: #000000;
+	border-radius: 16px;
+	justify-content: center;
+	transition: 0.15s ease;
+	background: rgb(113, 41, 7);
+	grid-column: 1/5;
+	width: 360px;
+	position: relative;
+	top: 66px;
+	right: 0px;
+	height: 59px;
+	font-weight: 900;
+}
+
+.symbo2,
+.enter,
+.clear,
+.delete,
+.symbo,
+.symbol,
+.number {
+	width: 100%;
+	height: 130%;
+	/* display: block; */
+	color: #000000;
+	justify-content: center;
+	text-align: center;
+	border-radius: 7px;
+	padding: 1px 20px;
+	justify-items: center;
+	font-weight: 900;
+}
+
+.symbo2,
+.clear {
+	font-size: large;
+	background: rgb(3, 6, 84);
+	font-weight: 900;
+}
+.symbo {
+	font-size: large;
+	background: rgb(9, 45, 48);
+	font-weight: 900;
+}
+.delete,
+.enter {
+	font-size: large;
+	background: rgb(51, 4, 2);
+	font-weight: 900;
+}
+
+.symbol {
+	font-size: large;
+	background: #02073d;
+}
+.symbol:hover {
+	background: #0219e3;
+}
+
+.number {
+	background: #333849;
+}
+.symbo2:hover {
+	background: #2d034a;
+}
+.enter:hover {
+	background: #a40707;
+}
+.clear:hover {
+	background: #2d034a;
+}
+.delete:hover {
+	background: #a40707;
+}
+.symbo:hover {
+	background: #5c0303;
+}
+.symbol:hover {
+	background: #a1a604;
+}
+
+.number:hover {
+	background: #1443dfac;
+}
