@@ -50,7 +50,7 @@ is a web-based calculator application that allows users to perform basic arithme
 >RegisterKeyboardEvents (): Set up event listeners for keyboard input.
 event listeners
 
-## The script also includes event listeners for button clicks and keyboard input. These event listeners call the relevant methods of the calculator instance to handle user input and update the view accordingly. 
+### The script also includes event listeners for button clicks and keyboard input. These event listeners call the relevant methods of the calculator instance to handle user input and update the view accordingly. 
 
 >1-Number buttons: Attach event listeners to append numbers to the current operand.
 
