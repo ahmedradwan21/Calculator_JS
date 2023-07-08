@@ -64,7 +64,8 @@ event listeners
 
 >6-Copy button: Attach an event listener to copy the current parameter to the clipboard.
 
-![image](https://github.com/ahmedradwan21/Calculator_JS/assets/100035760/9388e25d-87f8-4c5e-b40c-9721c5180331)
+
+![image](https://github.com/ahmedradwan21/Calculator_JS/assets/100035760/6419600f-30ba-4a1f-a034-8858a2ce8e37)
 
 
 
